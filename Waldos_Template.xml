@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Waldos">
+  <template name="modulo" value="from Waldos.PyWaldo.modulos import Modulo&#10;from Waldos.PyWaldo.parametros import Params&#10;from Waldos.InWaldo import wdados&#10;&#10;&#10;class Params$NOME_MODULO$(Params):&#10;    # Lista de nomes parâmetros que este módulo utiliza. &#10;    __slots__ = []&#10;    &#10;    # Definir o valor padrão para cada parâmetro.&#10;    # Exemplo:&#10;    # um_parametro = 10&#10;&#10;&#10;class $NOME_MODULO$(Modulo):&#10;    # Classe do tipo de dado produzido por este módulo.&#10;    dados = wdados.UmTipoDeDado   &#10;    &#10;    def calcular(self, waldo):&#10;        # Aqui deve-se chamar métodos para realizar o cálculo e&#10;        # retornar o resultado.&#10;        &#10;        return None&#10;" description="Um modulo para o waldo" toReformat="false" toShortenFQNames="true">
+    <variable name="NOME_MODULO" expression="fileNameWithoutExtension()" defaultValue="UmModulo" alwaysStopAt="false" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
